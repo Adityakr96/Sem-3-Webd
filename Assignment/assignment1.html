@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSD Quiz Assignment</title>
+  <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+  <main class="quiz-box">
+    <!-- Page 1: Student details -->
+    <section id="detailsPage" class="page">
+      <h1>Front-End Development Quiz</h1>
+      <p class="subtitle">Enter your details before starting the quiz.</p>
+
+      <form id="detailsForm">
+        <label for="studentName">Name</label>
+        <input type="text" id="studentName" placeholder="Enter your name" required>
+
+        <label for="rollNumber">Roll No</label>
+        <input type="text" id="rollNumber" maxlength="10" placeholder="Maximum 10 characters" required>
+
+        <label for="section">Section</label>
+        <input type="text" id="section" placeholder="Example: A" required>
+
+        <p id="formMessage" class="message" aria-live="polite"></p>
+        <button type="submit" id="startButton" class="primary-button">Start Quiz</button>
+      </form>
+    </section>
+
+    <!-- Page 2: Quiz questions -->
+    <section id="quizPage" class="page hidden">
+      <h1>FSD Quiz</h1>
+      <p id="welcomeText" class="subtitle"></p>
+      <form id="quizForm">
+        <div id="questions"></div>
+        <p id="quizMessage" class="message" aria-live="polite"></p>
+        <button type="submit" id="submitButton" class="primary-button">Submit Quiz</button>
+      </form>
+      <div id="result" class="result hidden"></div>
+    </section>
+  </main>
+
+  <script src="assignment1.js"></script>
+</body>
+</html>
