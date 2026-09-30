@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f0d2d2;
+}
+
+h1 {
+    color: #eb9292cb;
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 18px;
+}
